@@ -37,15 +37,17 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr  ;
-    grid-template-areas:  "red  "
-                                    "cyan"
-                                    " orange  ";
+    grid-template-areas:  "red  read"
+                                    "cyan blue"
+                                    " orange oran ";
     grid-template-rows: 28vh  28vh 28vh ;
     grid-template-columns: 28vw 28vw 28vw;
     border: 1px solid red;
     grid-gap:10px;
     height: 82vh;
     width: 100vh;
+    justify-content: center;
+    align-content: center;
     
     
 
