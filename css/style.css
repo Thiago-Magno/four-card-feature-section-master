@@ -65,6 +65,7 @@ body {
 
 /* Karma article settings =====================*/
 .karma {
+
     border-top: 3px solid var(--Orange);
     background-color: var(--background-color);
     /* grid-area: orange; */
@@ -126,6 +127,12 @@ body {
 }
 
 /* image setting on the articles==================== */
+.karma>img {
+
+    justify-content: right;
+
+
+}
 
 img {
     height: 3rem;
