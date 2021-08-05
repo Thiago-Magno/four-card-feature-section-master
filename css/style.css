@@ -1,5 +1,6 @@
 /* global settings===================== */
 * {
+    font-family: Poppins;
     font-size: 15px;
 }
 
@@ -27,17 +28,21 @@ body {
 
 }
 
+/* grid layout start======================= */
 .main {
     display: flex;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     /* align-content: center; */
+    /* align-items: center; */
+    margin-top: 1rem;
+    flex-direction: column;
     align-items: center;
-    border: solid 4px green;
 
 }
 
+/* grid layout settings */
 .conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,6 +52,7 @@ body {
     grid-template-rows: 28vh 28vh 28vh;
     grid-template-columns: 21vw 21vw 21vw;
     grid-gap: 10px;
+    grid-column-gap: 1.5rem;
     height: 82vh;
     width: 100vh;
     justify-content: center;
@@ -57,7 +63,7 @@ body {
 
 }
 
-
+/* Karma article settings =====================*/
 .karma {
     border-top: 3px solid var(--Orange);
     background-color: var(--background-color);
@@ -66,22 +72,29 @@ body {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 2;
-    box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
-        0 20px 20px 0 rgba(59, 141, 218, 0.19);
-    margin-top: 5rem;
+    box-shadow: 0 5px 10px 0 rgba(105, 108, 110, 0.19),
+        0 10px 10px 0 rgba(105, 108, 110, 0.19);
+    margin-top: 7rem;
     padding-bottom: 12rem;
     border-radius: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
 }
 
+/*Supervisor article settings =====================*/
 .supervisor {
     border-top: 3px solid var(--Cyan);
     /* grid-area: cyan; */
     grid-row-start: 2;
-    box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
-        0 20px 20px 0 rgba(59, 141, 218, 0.19);
+    box-shadow: 0 5px 10px 0 rgba(105, 108, 110, 0.19),
+        0 10px 10px 0 rgba(105, 108, 110, 0.19);
     border-radius: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
+/* Team-builder article settings =====================*/
 .team {
     border-top: 3px solid var(--Red);
     /* grid-area: red; */
@@ -89,27 +102,74 @@ body {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
-        0 20px 20px 0 rgba(59, 141, 218, 0.19);
-    margin-top: 5rem;
+    box-shadow: 0 4px 10px 0 rgba(105, 108, 110, 0.199),
+        0 15px 15px 0 rgba(105, 108, 110, 0.19);
+    margin-top: 6rem;
     padding-bottom: 12rem;
     border-radius: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
 }
 
+/* Calculator article settings =====================*/
 .calculator {
     border-top: 3px solid var(--Blue);
     /* grid-area: blue; */
     grid-row-start: 2;
     grid-column-start: 3;
-    box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
-        0 20px 20px 0 rgba(59, 141, 218, 0.19);
+    box-shadow: 0 5px 10px 0 rgba(105, 108, 110, 0.19),
+        0 10px 10px 0 rgba(105, 108, 110, 0.19);
     border-radius: 0.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* image setting on the articles==================== */
+
+img {
+    height: 3rem;
+
 }
 
 
+/* text =================================== */
+div {
+    text-align: center;
+}
 
+p {
+    color: var(--text-color);
+    word-break: normal;
 
+}
 
+h3 {
+    text-align: start;
+}
+
+.title1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--title-color);
+}
+
+.title2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.description {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.text-description {
+    font-size: 0.7rem;
+    text-align: left;
+}
 
 /* Footer formatation=================== */
 .attribution {
