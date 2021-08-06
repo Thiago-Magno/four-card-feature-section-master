@@ -46,9 +46,7 @@ body {
 .conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-areas:  "n red r"
-                                    " cyan m blue "
-                                    "q orange o"; */
+
     grid-template-rows: 28vh 28vh 28vh;
     grid-template-columns: 21vw 21vw 21vw;
     grid-gap: 10px;
@@ -68,7 +66,7 @@ body {
 
     border-top: 3px solid var(--Orange);
     background-color: var(--background-color);
-    /* grid-area: orange; */
+
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -86,7 +84,7 @@ body {
 /*Supervisor article settings =====================*/
 .supervisor {
     border-top: 3px solid var(--Cyan);
-    /* grid-area: cyan; */
+
     grid-row-start: 2;
     box-shadow: 0 5px 10px 0 rgba(105, 108, 110, 0.19),
         0 10px 10px 0 rgba(105, 108, 110, 0.19);
@@ -98,7 +96,6 @@ body {
 /* Team-builder article settings =====================*/
 .team {
     border-top: 3px solid var(--Red);
-    /* grid-area: red; */
     grid-column-start: 2;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -116,7 +113,6 @@ body {
 /* Calculator article settings =====================*/
 .calculator {
     border-top: 3px solid var(--Blue);
-    /* grid-area: blue; */
     grid-row-start: 2;
     grid-column-start: 3;
     box-shadow: 0 5px 10px 0 rgba(105, 108, 110, 0.19),
@@ -127,11 +123,25 @@ body {
 }
 
 /* image setting on the articles==================== */
-.karma>img {
 
-    justify-content: right;
+.karma>.img {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.calculator>.img {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.team>.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.supervisor>.img {
+    display: flex;
+    justify-content: flex-end;
 }
 
 img {
@@ -178,6 +188,10 @@ h3 {
     text-align: left;
 }
 
+footer {
+    padding: 3rem;
+}
+
 /* Footer formatation=================== */
 .attribution {
     font-size: 11px;
@@ -186,4 +200,101 @@ h3 {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:1440px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media(max-width:375px) {
+    .main {
+        width: 90%;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .conteiner {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 28vh 28vh 28vh 28vh;
+        grid-template-columns: 1fr;
+        /* grid-template-columns: 30vw; */
+        grid-template-areas: "co"
+            "s"
+            " t"
+            "k"
+            "c";
+        grid-gap: 10px;
+        height: 82vh;
+        width: 100vh;
+        width: 90%;
+        height: 100%;
+        /* justify-content: center;
+        align-content: center; */
+
+    }
+
+    .content {
+        display: grid;
+        grid-area: co;
+
+    }
+
+    .karma {
+        display: grid;
+        grid-area: k;
+        margin-top: 0;
+        padding-bottom: 0;
+        /* border: 1px solid orange; */
+    }
+
+    .supervisor {
+        display: grid;
+        grid-area: s;
+        /* border: 1px solid cyan; */
+    }
+
+    .calculator {
+        display: grid;
+        grid-area: c;
+
+        /* border: 1px solid blue; */
+    }
+
+    .team {
+        display: grid;
+        grid-area: t;
+        margin-top: 0;
+        padding-bottom: 0;
+
+        /* border: 1px solid red; */
+    }
+
+    .title1 {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .title2 {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 2.5rem 0 0 2.5rem;
+
+    }
+
+    footer {
+        padding: 3rem;
+        margin-top: 8rem;
+    }
+
 }
