@@ -208,7 +208,7 @@ footer {
     }
 }
 
-@media(max-width:375px) {
+@media(max-width:685px) {
     .main {
         width: 90%;
         background-color: var(--background-color);
@@ -224,7 +224,6 @@ footer {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 28vh 28vh 28vh 28vh;
         grid-template-columns: 1fr;
-        /* grid-template-columns: 30vw; */
         grid-template-areas: "co"
             "s"
             " t"
@@ -235,8 +234,7 @@ footer {
         width: 100vh;
         width: 90%;
         height: 100%;
-        /* justify-content: center;
-        align-content: center; */
+
 
     }
 
@@ -251,20 +249,20 @@ footer {
         grid-area: k;
         margin-top: 0;
         padding-bottom: 0;
-        /* border: 1px solid orange; */
+
     }
 
     .supervisor {
         display: grid;
         grid-area: s;
-        /* border: 1px solid cyan; */
+
     }
 
     .calculator {
         display: grid;
         grid-area: c;
 
-        /* border: 1px solid blue; */
+
     }
 
     .team {
@@ -273,7 +271,7 @@ footer {
         margin-top: 0;
         padding-bottom: 0;
 
-        /* border: 1px solid red; */
+
     }
 
     .title1 {
